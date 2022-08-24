@@ -193,7 +193,7 @@ namespace WindowsFormsApp2.Pages.Edit
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(771, 494);
+            this.button1.Location = new System.Drawing.Point(771, 461);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 16;
@@ -312,7 +312,7 @@ namespace WindowsFormsApp2.Pages.Edit
             this.groupBox3.Controls.Add(this.gridInventory);
             this.groupBox3.Location = new System.Drawing.Point(299, 22);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(547, 462);
+            this.groupBox3.Size = new System.Drawing.Size(547, 433);
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Содержимое описи";
@@ -322,14 +322,14 @@ namespace WindowsFormsApp2.Pages.Edit
             this.gridInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridInventory.Location = new System.Drawing.Point(8, 38);
             this.gridInventory.Name = "gridInventory";
-            this.gridInventory.Size = new System.Drawing.Size(528, 410);
+            this.gridInventory.Size = new System.Drawing.Size(528, 389);
             this.gridInventory.TabIndex = 0;
             // 
             // _edit_Package
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(858, 529);
+            this.ClientSize = new System.Drawing.Size(858, 490);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

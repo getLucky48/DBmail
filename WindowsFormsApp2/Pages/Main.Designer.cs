@@ -34,7 +34,7 @@ namespace WindowsFormsApp2.Pages
             this.gridTypePackage = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.gridPackage = new System.Windows.Forms.DataGridView();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.gridEmployee = new System.Windows.Forms.DataGridView();
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -44,7 +44,7 @@ namespace WindowsFormsApp2.Pages
             ((System.ComponentModel.ISupportInitialize)(this.gridTypePackage)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridPackage)).BeginInit();
-            this.tabPage4.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridEmployee)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +52,7 @@ namespace WindowsFormsApp2.Pages
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
@@ -99,15 +99,15 @@ namespace WindowsFormsApp2.Pages
             this.gridPackage.Size = new System.Drawing.Size(784, 362);
             this.gridPackage.TabIndex = 0;
             // 
-            // tabPage4
+            // tabPage3
             // 
-            this.tabPage4.Controls.Add(this.gridEmployee);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(789, 373);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Сотрудники";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage3.Controls.Add(this.gridEmployee);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(789, 373);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Сотрудники";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // gridEmployee
             // 
@@ -163,7 +163,7 @@ namespace WindowsFormsApp2.Pages
             ((System.ComponentModel.ISupportInitialize)(this.gridTypePackage)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridPackage)).EndInit();
-            this.tabPage4.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridEmployee)).EndInit();
             this.ResumeLayout(false);
 
@@ -174,7 +174,7 @@ namespace WindowsFormsApp2.Pages
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage3;
 
         private System.Windows.Forms.DataGridView gridTypePackage;
         private System.Windows.Forms.DataGridView gridPackage;

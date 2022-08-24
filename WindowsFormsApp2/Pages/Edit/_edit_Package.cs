@@ -18,6 +18,7 @@ namespace WindowsFormsApp2.Pages.Edit
         private List<TypePackage> typePackageList = new List<TypePackage>();
         private List<Inventory> InventoryList = new List<Inventory>();
         private List<InventoryContainer> inventoryContainerList = new List<InventoryContainer>();
+
         private Guid inventoryId = Guid.Empty;
 
         public _edit_Package()
@@ -33,7 +34,7 @@ namespace WindowsFormsApp2.Pages.Edit
             comboTypePackage.SelectedIndex = 0;
 
             cBoxInventory.DataSource = InventoryList;
-            
+
             RefreshComboBox();
             RefreshGrid();
 
@@ -67,7 +68,7 @@ namespace WindowsFormsApp2.Pages.Edit
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //tpdp save employee
             this.obj.sender = tBoxSender.Text;
             this.obj.start_point = tBoxStartPoint.Text;
             this.obj.recipient = tBoxRecipient.Text;

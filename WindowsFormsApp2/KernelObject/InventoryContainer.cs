@@ -62,8 +62,6 @@ namespace WindowsFormsApp2.KernelObject
 
         }
 
-        
-
         protected override void FillByReader(NpgsqlDataReader reader)
         {
 

@@ -104,6 +104,12 @@
     <Compile Include="KernelObject\KernelObject.cs" />
     <Compile Include="KernelObject\Package.cs" />
     <Compile Include="KernelObject\TypePackage.cs" />
+    <Compile Include="Pages\Edit\_edit_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Edit\_edit_Employee.Designer.cs">
+      <DependentUpon>_edit_Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Edit\_edit_Inventory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Auth.resx">
       <DependentUpon>Auth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Edit\_edit_Employee.resx">
+      <DependentUpon>_edit_Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Edit\_edit_Inventory.resx">
       <DependentUpon>_edit_Inventory.cs</DependentUpon>

@@ -103,7 +103,18 @@ namespace WindowsFormsApp2.Pages
                 LoadData();
 
             }
-            else if (idx == 2) gridView = gridEmployee;
+            else if (idx == 2)
+            {
+
+                _edit_Employee edit = new _edit_Employee();
+
+                if (!string.IsNullOrEmpty(id))
+                    edit = new _edit_Employee(Guid.Parse(id));
+
+                edit.ShowDialog();
+                LoadData();
+
+            }
             else throw new Exception("Не указан грид для выборки данных");
 
         }
