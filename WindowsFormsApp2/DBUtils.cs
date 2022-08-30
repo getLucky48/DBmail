@@ -20,7 +20,6 @@ namespace WindowsFormsApp2
         public static NpgsqlConnection getConnection()
         {
 
-            //string connString = "Server=" + host + ";Database=" + database + ";User Id=" + userid + ";password=" + password + "; Allow User Variables=True";
             string connString = $"User ID={userid};Password={password};Host={host};Port={port};Database={database};";
 
             return new NpgsqlConnection(connString);

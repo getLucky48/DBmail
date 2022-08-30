@@ -31,7 +31,9 @@ namespace WindowsFormsApp2.Pages.Edit
             typePackageList = KernelObject.KernelObject.GetList<TypePackage>();
 
             comboTypePackage.DataSource = typePackageList.Select(t => t.name).ToList();
-            comboTypePackage.SelectedIndex = 0;
+
+            if(comboTypePackage.Items.Count > 0)
+                comboTypePackage.SelectedIndex = 0;
 
             cBoxInventory.DataSource = InventoryList;
 

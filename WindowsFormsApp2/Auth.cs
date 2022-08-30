@@ -16,14 +16,33 @@ namespace WindowsFormsApp2
         public Auth()
         {
             InitializeComponent();
+
+            comboBox1.DataSource = new List<string>()
+            {
+
+                "postgres",
+                "admin",
+                "employee"
+
+            };
+        
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
+            Main.userid = comboBox1.SelectedItem.ToString();
+
+            this.Hide();
+            
             Main main = new Main();
-            main.Show();
+            main.ShowDialog();
+
+            try { this.Show(); }
+            catch (ObjectDisposedException) { };
 
         }
+
     }
+
 }
