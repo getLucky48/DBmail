@@ -412,6 +412,71 @@ namespace WindowsFormsApp2.Pages
 
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string query = "select average_pay_cursor()";
+
+            NpgsqlConnection connection = DBUtils.getConnection();
+
+            connection.Open();
+
+            NpgsqlCommand cmd = new NpgsqlCommand(query, connection);
+
+            NpgsqlDataReader reader = cmd.ExecuteReader();
+
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+
+            gridSql.DataSource = dt;
+
+            connection.Close();
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+            string query = "select count_object_in_inventory_scalar_func((select id from inventory limit 1))";
+
+            NpgsqlConnection connection = DBUtils.getConnection();
+
+            connection.Open();
+
+            NpgsqlCommand cmd = new NpgsqlCommand(query, connection);
+
+            NpgsqlDataReader reader = cmd.ExecuteReader();
+
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+
+            gridSql.DataSource = dt;
+
+            connection.Close();
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+            string query = "select search_by_finish_point_vector_func((select finish_point from package limit 1));";
+
+            NpgsqlConnection connection = DBUtils.getConnection();
+
+            connection.Open();
+
+            NpgsqlCommand cmd = new NpgsqlCommand(query, connection);
+
+            NpgsqlDataReader reader = cmd.ExecuteReader();
+
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+
+            gridSql.DataSource = dt;
+
+            connection.Close();
+        
+        }
+    
     }
 
 }
